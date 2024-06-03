@@ -59,6 +59,21 @@ class Quantization:
         # Update config with calculated scale and zero_point
         object.__setattr__(self.config, 'scale', scale)
         object.__setattr__(self.config, 'zero_point', zero_point)
+        
+    def get_q_scale_symmetric(self, tensor: torch.Tensor) -> float:
+        r_max = tensor.abs().max().item()
+        q_max = torch.iinfo(self.config.dtype).max
+    
+    def linear_q_symmetric(tensor, dtype=torch.int8):
+    scale = get_q_scale_symmetric(tensor)
+    
+    quantized_tensor = linear_q_with_scale_and_zero_point(tensor,
+                                                     scale=scale,
+                   # in symmetric quantization zero point is = 0    
+                                                    zero_point=0,
+                                                      dtype=dtype)
+    
+    return quantized_tensor, scale
     
     def linear_quantization(self) -> torch.Tensor:
         """
