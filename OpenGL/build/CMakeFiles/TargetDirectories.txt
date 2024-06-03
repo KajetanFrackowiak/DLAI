@@ -1,0 +1,3 @@
+/home/kajetan/Documents/OpenGL/build/CMakeFiles/OpenGL.dir
+/home/kajetan/Documents/OpenGL/build/CMakeFiles/edit_cache.dir
+/home/kajetan/Documents/OpenGL/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/writepng.dir/writepng.c.o -o writepng  -lpng 

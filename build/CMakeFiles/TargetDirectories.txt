@@ -1,0 +1,3 @@
+/home/kajetan/Documents/build/CMakeFiles/writepng.dir
+/home/kajetan/Documents/build/CMakeFiles/edit_cache.dir
+/home/kajetan/Documents/build/CMakeFiles/rebuild_cache.dir
